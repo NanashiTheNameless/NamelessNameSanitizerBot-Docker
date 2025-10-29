@@ -20,32 +20,32 @@ If you’re looking for the bot’s source code, feature list, and full document
 
 # Quick start
 
-1) Clone the git repo:
+1. Clone the repository:
 
 ```bash
 git clone --depth 1 https://github.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker
 ```
 
-2) Enter the git repo:
+2. Enter the repository:
 
 ```bash
 cd NamelessNameSanitizerBot-Docker
 ```
 
-3) Create `.env`:
+3. Create `.env`:
 
 ```bash
 cp .env.example .env
 # edit .env and set DISCORD_TOKEN (and any other needed vars)
 ```
 
-4) Start:
+4. Start:
 
 ```bash
 docker compose up -d
 ```
 
-5) Invite the bot to your server (replace with your Application ID):
+5. Invite the bot to your server (replace with your Application ID):
 
 ```text
 https://discord.com/oauth2/authorize?client_id=<YOUR_APP_ID>&scope=bot%20applications.commands&permissions=134217728
@@ -86,9 +86,9 @@ docker compose down
 
 ## Troubleshooting (quick)
 
-- Commands not visible yet? Allow several minutes after first startup for global slash command sync and ensure application.commands scope.
-- Not changing nicknames? Confirm the bot has “Manage Nicknames,” role order is correct, and the sanitizer is enabled per-guild.
-- Database not ready? Wait for the Postgres healthcheck to pass; check logs and `DATABASE_URL`.
+- Commands not visible yet? Allow several minutes after first startup for global slash command sync, and ensure the application.commands scope.
+- Not changing nicknames? Confirm the bot has “Manage Nicknames,” the role order is correct, and the sanitizer is enabled per guild.
+- Database not ready? Wait for the Postgres health check to pass; check logs and `DATABASE_URL`.
 
 ## Security & privacy
 
