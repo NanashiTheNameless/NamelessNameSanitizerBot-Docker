@@ -4,8 +4,8 @@ This repository is a minimal, fast-to-run Docker setup for NamelessNameSanitizer
 
 If you’re looking for the bot’s source code, feature list, and full documentation, see:
 
-- Full repo and docs: https://github.com/NanashiTheNameless/NamelessNameSanitizerBot
-- Install to a server: https://namelessnamesanitizerbot.namelessnanashi.dev/install/
+- Full repo and docs: <https://github.com/NanashiTheNameless/NamelessNameSanitizerBot>
+- Install to a server: <https://namelessnamesanitizerbot.namelessnanashi.dev/install/>
 
 ## Why this repo exists
 
@@ -18,39 +18,37 @@ If you’re looking for the bot’s source code, feature list, and full document
 - Docker Engine and Docker Compose plugin
 - Discord Bot token (with Bot scope; recommended intents: Server Members)
 
-## Quick start
+# Quick start
 
-1) Copy the environment template and set at least your Discord token:
+1) Clone the git repo:
+
+```bash
+git clone --depth 1 https://github.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker
+```
+
+2) Enter the git repo:
+
+```bash
+cd NamelessNameSanitizerBot-Docker
+```
+
+3) Create `.env`:
 
 ```bash
 cp .env.example .env
-$EDITOR .env
+# edit .env and set DISCORD_TOKEN (and any other needed vars)
 ```
 
-Required: `DISCORD_TOKEN`
-
-Optional (recommended):
-
-- `APPLICATION_ID` to easily generate an invite link
-- `OWNER_ID` for owner-only commands
-- `DATABASE_URL` (defaults already match the included Postgres service)
-
-2) Start the stack:
+4) Start:
 
 ```bash
 docker compose up -d
 ```
 
-3) Invite the bot to your server (replace with your Application ID):
+5) Invite the bot to your server (replace with your Application ID):
 
 ```text
 https://discord.com/oauth2/authorize?client_id=<YOUR_APP_ID>&scope=bot%20applications.commands&permissions=134217728
-```
-
-4) View logs (optional):
-
-```bash
-docker compose logs -f bot
 ```
 
 ## What’s included
@@ -96,8 +94,8 @@ docker compose down
 
 See `SECURITY.md` in this repo and the policies on the project site:
 
-- Privacy Policy: https://namelessnamesanitizerbot.namelessnanashi.dev/PrivacyPolicy/
-- Terms of Service: https://namelessnamesanitizerbot.namelessnanashi.dev/TermsOfService/
+- Privacy Policy: <https://namelessnamesanitizerbot.namelessnanashi.dev/PrivacyPolicy/>
+- Terms of Service: <https://namelessnamesanitizerbot.namelessnanashi.dev/TermsOfService/>
 
 ## License & Credits
 
