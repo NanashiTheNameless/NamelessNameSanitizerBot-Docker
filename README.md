@@ -94,8 +94,15 @@ docker compose down
 
 See [SECURITY.md](<./SECURITY.md>) in this repo and the policies on the project site:
 
-- Privacy Policy: <https://namelessnamesanitizerbot.namelessnanashi.dev/PrivacyPolicy/>
-- Terms of Service: <https://namelessnamesanitizerbot.namelessnanashi.dev/TermsOfService/>
+- The bot does not log message content and doesn’t require the Message Content intent.
+- Logging channel (if set) only receives a short notice when a nickname is changed.
+- Minimal data storage: per-guild config and per-user cooldown timestamps. Cooldowns are purged automatically after COOLDOWN_TTL_SEC.
+- Users can request deletion via /delete-my-data; bot owners can execute /delete-user-data or /global-delete-user-data when legally required.
+
+Related policies:
+
+- [Privacy Policy](<https://namelessnamesanitizerbot.namelessnanashi.dev/PrivacyPolicy/>)
+- [Terms of Service](<https://namelessnamesanitizerbot.namelessnanashi.dev/TermsOfService/>)
 
 ## License & Credits
 
