@@ -92,14 +92,14 @@ docker compose down
 
 ## Security & privacy
 
-See `SECURITY.md` in this repo and the policies on the project site:
+See [SECURITY.md](<./SECURITY.md>) in this repo and the policies on the project site:
 
 - Privacy Policy: <https://namelessnamesanitizerbot.namelessnanashi.dev/PrivacyPolicy/>
 - Terms of Service: <https://namelessnamesanitizerbot.namelessnanashi.dev/TermsOfService/>
 
 ## License & Credits
 
-See `license.md`.
+See [license.md](<./license.md>).
 
 - [All Major Contributors](./CONTRIBUTORS.md)
 - [All Other Contributors](https://github.com/NanashiTheNameless/NamelessNameSanitizerBot/graphs/contributors)
