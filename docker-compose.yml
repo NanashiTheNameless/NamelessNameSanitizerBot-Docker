@@ -4,7 +4,9 @@
 
 services:
   bot:
-    image: nanashithenameless/namelessnamesanitizerbot:latest
+    # GHCR is preferred, a DockerHub image is also avalible with:
+    # nanashithenameless/namelessnamesanitizerbot:latest
+    image: ghcr.io/nanashithenameless/namelessnamesanitizerbot:latest
     container_name: NamelessNameSanitizerBot
     env_file:
       - .env
