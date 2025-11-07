@@ -110,7 +110,7 @@ Related policies:
 
 ## License & Credits
 
-See [license.md](<./license.md>).
+See [LICENSE.md](<./LICENSE.md>).
 
 - [All Major Contributors](<./CONTRIBUTORS.md>)
 - [All Other Contributors](<https://github.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker/graphs/contributors>)
