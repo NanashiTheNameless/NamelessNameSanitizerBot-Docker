@@ -23,29 +23,26 @@ If you’re looking for the bot’s source code, feature list, and full document
 1. Clone the repository:
 
 ```bash
-git clone --depth 1 https://github.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker
+git clone --filter=blob:none https://github.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker.git \
+&& cd NamelessNameSanitizerBot-Docker \
+&& git sparse-checkout init --no-cone \
+&& git sparse-checkout set '/TermsOfService.md' '/SECURITY.md' '/PrivacyPolicy.md' '/README.md' '/LICENSE.md' '/docker-compose.yml' '/.env.example'
 ```
 
-2. Enter the repository:
-
-```bash
-cd NamelessNameSanitizerBot-Docker
-```
-
-3. Create `.env`:
+2. Create `.env`:
 
 ```bash
 cp .env.example .env
 # edit .env and set DISCORD_TOKEN (and any other needed vars)
 ```
 
-4. Start:
+3. Start:
 
 ```bash
 docker compose up -d
 ```
 
-5. Invite the bot to your server (replace with your Application ID):
+4. Invite the bot to your server (replace with your Application ID):
 
 ```text
 https://discord.com/oauth2/authorize?client_id=<YOUR_APP_ID>&scope=bot%20applications.commands&permissions=134217728
