@@ -14,7 +14,6 @@ services:
 
     environment:
       - PYTHONUNBUFFERED=1
-      - DATABASE_URL=postgresql://bot:bot@db:5432/bot
       - TELEMETRY_STATE_DIR=/app/data
     volumes:
       - botdata:/app/data
@@ -31,10 +30,10 @@ services:
     image: postgres:18
     container_name: discord-sanitizer-db
     restart: unless-stopped
+    env_file:
+      - .env
     environment:
-      - POSTGRES_DB=bot
-      - POSTGRES_USER=bot
-      - POSTGRES_PASSWORD=bot
+      DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
       interval: 5s
