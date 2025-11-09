@@ -10,7 +10,7 @@ If you’re looking for the bot’s source code, feature list, and full document
 ## Why this repo exists
 
 - Minimal footprint: just `docker-compose.yml`, `.env.example`, and a couple of docs
-- Zero local build: uses the published image `nanashithenameless/namelessnamesanitizerbot:latest`
+- Zero local build: uses the published image `ghcr.io/nanashithenameless/namelessnamesanitizerbot:latest`
 - One command to start: bring up the bot and a PostgreSQL instance quickly
 
 ## Requirements
