@@ -13,7 +13,7 @@ This repository is a Docker runner for the NamelessNameSanitizerBot image. Use C
 
 - Don’t introduce secrets into the repo. Keep real values in `.env` only.
 - Avoid changing the image references unless asked.
-- Keep diffs minimal—only touch lines you need to change.
+- Keep diffs minimal - only touch lines you need to change.
 
 ## Project facts Claude should remember
 

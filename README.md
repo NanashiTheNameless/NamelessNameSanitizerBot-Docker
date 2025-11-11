@@ -1,6 +1,6 @@
-# NamelessNameSanitizerBot — Minimal Docker Runner
+# NamelessNameSanitizerBot - Minimal Docker Runner
 
-This repository is a minimal, fast-to-run Docker setup for NamelessNameSanitizerBot. It contains only what you need to run the published Docker image with PostgreSQL via Docker Compose—no application source code.
+This repository is a minimal, fast-to-run Docker setup for NamelessNameSanitizerBot. It contains only what you need to run the published Docker image with PostgreSQL via Docker Compose - no application source code.
 
 If you’re looking for the bot’s source code, feature list, and full documentation, see:
 
