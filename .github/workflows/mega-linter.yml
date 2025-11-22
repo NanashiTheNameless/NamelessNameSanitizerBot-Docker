@@ -54,12 +54,6 @@ jobs:
       # Git Checkout
       - name: Checkout Code
         uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3
-        with:
-          token: ${{ secrets.PAT }}
-
-          # If you use VALIDATE_ALL_CODEBASE = true, you can remove this line to
-          # improve performance
-          fetch-depth: 0
 
       # MegaLinter
       - name: MegaLinter
@@ -87,8 +81,7 @@ jobs:
           #   }}
           VALIDATE_ALL_CODEBASE: >-
             ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
           # Help MegaLinter compute diffs against the default branch
           DEFAULT_BRANCH: main
@@ -124,7 +117,7 @@ jobs:
       # Create pull request if applicable
       # (for now works only on PR from same repository, not from forks)
       - name: Create Pull Request with applied fixes
-        uses: peter-evans/create-pull-request@b4733b9419fd47bbfa1807b15627e17cd70b5b22
+        uses: NanashiTheNameless/create-pull-request@54090d376ec2f57a75a38f70e405cdf68933eed4
         id: cpr
         if: >-
           steps.ml.outputs.has_updated_sources == 1 &&
