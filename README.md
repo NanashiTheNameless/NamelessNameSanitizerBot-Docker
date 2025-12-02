@@ -38,8 +38,15 @@ cp .env.example .env
 
 3. Start:
 
+As a daemon
+
 ```bash
 docker compose up -d
+```
+
+In the terminal
+```bash
+docker compose up
 ```
 
 4. Invite the bot to your server (replace with your Application ID):
