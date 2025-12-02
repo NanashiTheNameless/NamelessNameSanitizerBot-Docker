@@ -1,4 +1,4 @@
-# NamelessNameSanitizerBot - Minimal Docker Runner  [![Ask DeepWiki](<https://deepwiki.com/badge.svg>)](<https://deepwiki.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker>)
+# NamelessNameSanitizerBot - Minimal Docker Runner [![Ask DeepWiki](<https://deepwiki.com/badge.svg>)](<https://deepwiki.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker>)
 
 This repository is a minimal, fast-to-run Docker setup for NamelessNameSanitizerBot. It contains only what you need to run the published Docker image with PostgreSQL via Docker Compose - no application source code.
 
