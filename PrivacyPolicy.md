@@ -1,6 +1,6 @@
 # See the policy on the website
 
-<https://namelessnamesanitizerbot.namelessnanashi.dev/PrivacyPolicy/>
+<https://namelessnamesanitizerbot.namelessnanashi.dev/PrivacyPolicy>
 
 # Or on GitHub
 
