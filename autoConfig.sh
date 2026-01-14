@@ -16,7 +16,7 @@ fi
 
 # Warn if .env already exists
 if [ -f "$ENV_FILE" ]; then
-    read -p ".env already exists. Do you want to overwrite it? (y/N): " -n 1 -r
+    read -r -p ".env already exists. Do you want to overwrite it? (y/N): " -n 1 -r
     echo
     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
         echo "Aborted."
@@ -35,9 +35,9 @@ prompt_with_default() {
     local default_value="$2"
     local input_value
     if [ -z "$default_value" ]; then
-        read -p "$prompt_text: " input_value
+        read -r -p "$prompt_text: " input_value
     else
-        read -p "$prompt_text [$default_value]: " input_value
+        read -r -p "$prompt_text [$default_value]: " input_value
         input_value="${input_value:-$default_value}"
     fi
     echo "$input_value"
@@ -47,7 +47,7 @@ prompt_with_default() {
 prompt_secret() {
     local prompt_text="$1"
     local input_value
-    read -p "$prompt_text: " input_value
+    read -r -p "$prompt_text: " input_value
     echo "$input_value"
 }
 
