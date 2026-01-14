@@ -9,9 +9,9 @@ Quick links:
 
 ## Scope of this repo
 
-  - `bot`: `nanashithenameless/namelessnamesanitizerbot:latest`
-  - `db`: `postgres:18` with a healthcheck and volume
-  - `autoConfig.sh` - interactive configuration script for automated `.env` setup
+- `bot`: `nanashithenameless/namelessnamesanitizerbot:latest`
+- `db`: `postgres:18` with a healthcheck and volume
+- `autoConfig.sh` - interactive configuration script for automated `.env` setup
 
 ## Typical tasks for agents
 
