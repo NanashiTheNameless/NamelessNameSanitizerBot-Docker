@@ -123,6 +123,6 @@ See [LICENSE.md](<./LICENSE.md>).
 
 If you're using an AI assistant to help with this repo, see:
 
-- [AGENTS.md](<./AGENTS.md>) – general guidance for LLM agents working in this repo
-- [CLAUDE.md](<./CLAUDE.md>) – provider-specific notes for Anthropic Claude
-- [COPILOT.md](<./COPILOT.md>) – provider-specific notes for GitHub Copilot in VS Code
+- [AGENTS.md](<./AGENTS.md>) - general guidance for LLM agents working in this repo
+- [CLAUDE.md](<./CLAUDE.md>) - provider-specific notes for Anthropic Claude
+- [COPILOT.md](<./COPILOT.md>) - provider-specific notes for GitHub Copilot in VS Code
