@@ -26,7 +26,7 @@ If you're looking for the bot's source code, feature list, and full documentatio
 git clone --filter=blob:none https://github.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker.git \
 && cd NamelessNameSanitizerBot-Docker \
 && git sparse-checkout init --no-cone \
-&& git sparse-checkout set '/TermsOfService.md' '/SECURITY.md' '/PrivacyPolicy.md' '/README.md' '/LICENSE.md' '/docker-compose.yml' '/.env.example'
+&& git sparse-checkout set '/TermsOfService.md' '/SECURITY.md' '/PrivacyPolicy.md' '/README.md' '/LICENSE.md' '/docker-compose.yml' '/.env.example' '/autoConfig.sh'
 ```
 
 ### 2. Create `.env`
