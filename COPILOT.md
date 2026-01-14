@@ -18,7 +18,7 @@ This repository contains only a Docker Compose runner and docs for NamelessNameS
 
 ## Project specifics to keep in mind
 
-- No app source code here; don’t introduce files implying a build
+- No app source code here; don't introduce files implying a build
 - Services: `bot` (published image) and `db` (postgres:18)
 - Defaults: `COOLDOWN_SECONDS=30`, `SWEEP_INTERVAL_SEC=60`
 - Healthcheck ensures `db` is ready before bot starts

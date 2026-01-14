@@ -9,14 +9,13 @@ Quick links:
 
 ## Scope of this repo
 
-- Docker Compose stack to run:
   - `bot`: `nanashithenameless/namelessnamesanitizerbot:latest`
   - `db`: `postgres:18` with a healthcheck and volume
-- Configuration via `.env` (copy from `.env.example`)
-- No Python/TypeScript application source exists here
+  - `autoConfig.sh` - interactive configuration script for automated `.env` setup
 
 ## Typical tasks for agents
 
+- Update `autoConfig.sh` prompts or add new configuration options
 - Customize `.env.example` defaults and docs
 - Update `README.md` sections or add usage guides
 - Create operational docs (backup/restore, upgrades, troubleshooting)
@@ -26,7 +25,7 @@ Quick links:
 ## Guardrails and safety
 
 - Do not hardcode secrets. Keep `DISCORD_TOKEN` only in local `.env`.
-- Don’t modify the published image name unless instructed.
+- Don't modify the published image name unless instructed.
 - Keep changes minimal and focused; avoid reformatting unrelated lines.
 - Do not modify formatting of README.md unless explicitly asked, It appears to have errors, this is intentional.
 - Verify changes: `docker compose config` to validate, and restart if needed.

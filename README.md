@@ -2,7 +2,7 @@
 
 This repository is a minimal, fast-to-run Docker setup for NamelessNameSanitizerBot. It contains only what you need to run the published Docker image with PostgreSQL via Docker Compose - no application source code.
 
-If you’re looking for the bot’s source code, feature list, and full documentation, see:
+If you're looking for the bot's source code, feature list, and full documentation, see:
 
 - Full repo and docs: <https://github.com/NanashiTheNameless/NamelessNameSanitizerBot>
 - Install to a server: <https://namelessnamesanitizerbot.namelessnanashi.dev/install/>
@@ -31,10 +31,29 @@ git clone --filter=blob:none https://github.com/NanashiTheNameless/NamelessNameS
 
 ### 2. Create `.env`
 
+Option A - automated (recommended)
+
+```bash
+./autoConfig.sh
+```
+
+The wizard prompts for your `DISCORD_TOKEN`, validates it, and generates secure Postgres credentials. It writes `.env` for you. Re-run to overwrite if needed.
+
+Option B - manual
+
 ```bash
 cp .env.example .env
-# edit .env and set DISCORD_TOKEN (and any other needed vars)
+# Open .env and set at minimum:
+#   DISCORD_TOKEN=your-discord-bot-token
+# Optional but useful:
+#   OWNER_ID=your-discord-user-id
+#   APPLICATION_ID=your-application-client-id (prints invite URL on startup)
 ```
+
+Notes:
+
+- The default `DATABASE_URL` already matches the provided Postgres service in this Compose stack.
+- Keep secrets in local `.env`; do not commit it.
 
 ### 3. Start
 
@@ -45,6 +64,7 @@ docker compose up -d
 ```
 
 In the terminal
+
 ```bash
 docker compose up
 ```
@@ -55,7 +75,7 @@ docker compose up
 https://discord.com/oauth2/authorize?client_id=<YOUR_APP_ID>&scope=bot%20applications.commands&permissions=134217728
 ```
 
-## What’s included
+## What's included
 
 - `docker-compose.yml`
   - bot: `ghcr.io/nanashithenameless/namelessnamesanitizerbot:latest`/`nanashithenameless/namelessnamesanitizerbot:latest`
@@ -85,20 +105,20 @@ docker compose down
 
 ## Permissions and intents
 
-- The bot needs “Manage Nicknames” to edit nicknames.
-- For automatic sweeps and joins, enable “Server Members Intent”.
+- The bot needs "Manage Nicknames" to edit nicknames.
+- For automatic sweeps and joins, enable "Server Members Intent".
 
 ## Troubleshooting (quick)
 
 - Commands not visible yet? Allow several minutes after first startup for global slash command sync, and ensure the application.commands scope.
-- Not changing nicknames? Confirm the bot has “Manage Nicknames,” the role order is correct, and the sanitizer is enabled per guild.
+- Not changing nicknames? Confirm the bot has "Manage Nicknames," the role order is correct, and the sanitizer is enabled per guild.
 - Database not ready? Wait for the Postgres health check to pass; check logs and `DATABASE_URL`.
 
 ## Security & privacy
 
 See [SECURITY.md](<./SECURITY.md>) in this repo and the policies on the project site:
 
-- The bot does not log message content and doesn’t require the Message Content intent.
+- The bot does not log message content and doesn't require the Message Content intent.
 - Logging channel (if set) only receives a short notice when a nickname is changed.
 - Minimal data storage: per-guild config and per-user cooldown timestamps. Cooldowns are purged automatically after COOLDOWN_TTL_SEC.
 - Users can request deletion via /delete-my-data; bot owners can execute /delete-user-data or /global-delete-user-data when legally required.

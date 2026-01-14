@@ -1,6 +1,6 @@
 # Claude usage notes for this repo
 
-This repository is a Docker runner for the NamelessNameSanitizerBot image. Use Claude to make focused documentation and configuration updates. There’s no app source code here.
+This repository is a Docker runner for the NamelessNameSanitizerBot image. Use Claude to make focused documentation and configuration updates. There's no app source code here.
 
 ## What Claude can help with
 
@@ -11,7 +11,7 @@ This repository is a Docker runner for the NamelessNameSanitizerBot image. Use C
 
 ## Constraints
 
-- Don’t introduce secrets into the repo. Keep real values in `.env` only.
+- Don't introduce secrets into the repo. Keep real values in `.env` only.
 - Avoid changing the image references unless asked.
 - Keep diffs minimal - only touch lines you need to change.
 
