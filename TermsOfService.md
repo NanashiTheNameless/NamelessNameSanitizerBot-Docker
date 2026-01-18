@@ -1,6 +1,6 @@
 # See the policy on the website
 
-<https://namelessnamesanitizerbot.namelessnanashi.dev/TermsOfService>
+<https://nncl.namelessnanashi.dev/TermsOfService>
 
 # Or on GitHub
 

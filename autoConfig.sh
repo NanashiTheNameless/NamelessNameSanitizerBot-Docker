@@ -143,8 +143,8 @@ cat >"$ENV_FILE" <<EOF
 
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #
 # BY USING/HOSTING THIS BOT YOU AGREE TO THE FOLLOWING DOCUMENTS:                     #
-# https://namelessnamesanitizerbot.namelessnanashi.dev/TermsOfService                 #
-# https://namelessnamesanitizerbot.namelessnanashi.dev/PrivacyPolicy                  #
+# https://nncl.namelessnanashi.dev/TermsOfService                                     #
+# https://nncl.namelessnanashi.dev/PrivacyPolicy                                      #
 # https://github.com/NanashiTheNameless/NamelessNameSanitizerBot/blob/main/LICENSE.md #
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #
 
