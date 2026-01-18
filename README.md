@@ -72,7 +72,7 @@ docker compose up
 ### 4. Invite the bot to your server (replace with your Application ID)
 
 ```text
-https://discord.com/oauth2/authorize?client_id=<YOUR_APP_ID>&scope=bot%20applications.commands&permissions=134217728
+https://discord.com/oauth2/authorize?client_id=<YOUR_APP_ID>&scope=bot%20applications.commands&permissions=134217728&integration_type=0
 ```
 
 ## What's included
