@@ -1,4 +1,4 @@
-# See the policy on the website
+# See the Privacy Policy on the website
 
 <https://nncl.namelessnanashi.dev/PrivacyPolicy>
 

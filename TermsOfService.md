@@ -1,4 +1,4 @@
-# See the policy on the website
+# See the Terms of Service on the website
 
 <https://nncl.namelessnanashi.dev/TermsOfService>
 
