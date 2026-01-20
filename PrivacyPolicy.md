@@ -1,6 +1,6 @@
 # See the Privacy Policy on the website
 
-<https://nncl.namelessnanashi.dev/PrivacyPolicy>
+<https://nnsb.namelessnanashi.dev/PrivacyPolicy>
 
 # Or on GitHub
 

@@ -1,6 +1,6 @@
 # See the Terms of Service on the website
 
-<https://nncl.namelessnanashi.dev/TermsOfService>
+<https://nnsb.namelessnanashi.dev/TermsOfService>
 
 # Or on GitHub
 

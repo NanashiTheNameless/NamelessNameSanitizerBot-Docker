@@ -5,7 +5,7 @@ This repository is a minimal, fast-to-run Docker setup for NamelessNameSanitizer
 If you're looking for the bot's source code, feature list, and full documentation, see:
 
 - Full repo and docs: <https://github.com/NanashiTheNameless/NamelessNameSanitizerBot>
-- Install to a server: <https://nncl.namelessnanashi.dev/install/>
+- Install to a server: <https://nnsb.namelessnanashi.dev/install/>
 
 ## Why this repo exists
 
@@ -129,8 +129,8 @@ Public telemetry/census:
 
 Related policies:
 
-- [Privacy Policy](<https://nncl.namelessnanashi.dev/PrivacyPolicy/>)
-- [Terms of Service](<https://nncl.namelessnanashi.dev/TermsOfService/>)
+- [Privacy Policy](<https://nnsb.namelessnanashi.dev/PrivacyPolicy/>)
+- [Terms of Service](<https://nnsb.namelessnanashi.dev/TermsOfService/>)
 
 ## License & Credits
 
