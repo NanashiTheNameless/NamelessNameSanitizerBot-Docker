@@ -36,7 +36,7 @@ Quick links:
 - `APPLICATION_ID` - used for invite URL
 - Policy: `CHECK_LENGTH`, `MIN_NICK_LENGTH`, `MAX_NICK_LENGTH`, `PRESERVE_SPACES`, `SANITIZE_EMOJI`, `ENFORCE_BOTS`
 - Cooldowns: `COOLDOWN_SECONDS` (default 30), `COOLDOWN_TTL_SEC`
-- Background sweep: `SWEEP_INTERVAL_SEC` (default 60), `SWEEP_BATCH`
+- Background sweep: `SWEEP_INTERVAL_SEC` (default 60)
 - `DATABASE_URL` - stays `postgresql://bot:bot@db:5432/bot` by default
 
 ## Acceptance criteria for edits
