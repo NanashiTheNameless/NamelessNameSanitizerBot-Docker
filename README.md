@@ -125,7 +125,7 @@ See [SECURITY.md](<./SECURITY.md>) in this repo and the policies on the project 
 
 Public telemetry/census:
 
-- Aggregate, non-identifying census metrics are published at <https://telemetry.namelessnanashi.dev/> for transparency.
+- Aggregate, non-identifying census metrics are published at <https://telemetry.namelessnanashi.dev/> for transparency. This data helps assess bot adoption (how many instances are running) and guide development priorities.
 
 Related policies:
 

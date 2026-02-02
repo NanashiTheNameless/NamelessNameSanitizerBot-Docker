@@ -166,7 +166,7 @@ DM_OWNER_ON_ERRORS=$(prompt_with_default "Send DM when errors trigger DnD status
 COMMAND_COOLDOWN_SECONDS=$(prompt_with_default "Cooldown per user for slash commands (seconds)" "2")
 OWNER_DESTRUCTIVE_COOLDOWN_SECONDS=$(prompt_with_default "Cooldown for dangerous owner commands (seconds)" "5")
 DEBUG_MODE=$(prompt_with_default "Enable detailed output of bot actions for debugging (true/false)" "false")
-NNSB_TELEMETRY_OPTOUT=$(prompt_with_default "Send anonymous non-identifiable usage stats to help improve bot (0=yes, 1=no)" "0")
+NNSB_TELEMETRY_OPTOUT=$(prompt_with_default "Send anonymous hosting presence ping to help the developer assess bot adoption (track active instances) and guide development priorities (0=yes, 1=no)" "0")
 LOG_LEVEL=$(prompt_with_default "Log message detail level: DEBUG/INFO/WARNING/ERROR" "INFO")
 
 # Create .env file
@@ -238,8 +238,8 @@ DEBUG_MODE=$DEBUG_MODE
 # Telemetry (privacy-respecting census)
 # You can see the data here: https://telemetry.namelessnanashi.dev/
 # Enabled by default; disable by setting opt-out to true.
-# If you dont mind I would apprecieate self-hosters allowing this data collection
-# to help improve the bot service for everyone.
+# This helps the developer assess bot adoption (track how many instances are running)
+# and prioritize development efforts. If you don't mind, please allow this data collection.
 # Preferred flag to disable the census entirely (1/true/yes/on):
 NNSB_TELEMETRY_OPTOUT=$NNSB_TELEMETRY_OPTOUT
 # Alternative opt-out variable (also supported):
