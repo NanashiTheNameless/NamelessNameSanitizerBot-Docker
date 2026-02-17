@@ -78,7 +78,7 @@ https://discord.com/oauth2/authorize?client_id=<YOUR_APP_ID>&scope=bot%20applica
 ## What's included
 
 - `docker-compose.yml`
-  - bot: `ghcr.io/nanashithenameless/namelessnamesanitizerbot:latest`/`nanashithenameless/namelessnamesanitizerbot:latest`
+  - bot: `ghcr.io/nanashithenameless/namelessnamesanitizerbot:latest`
   - db: `postgres:18` with a healthcheck and a named volume (`db`)
   - default `DATABASE_URL=postgresql://bot:bot@db:5432/bot`
 - `.env.example` with sensible defaults and documentation
@@ -129,8 +129,8 @@ Public telemetry/census:
 
 Related policies:
 
-- [Privacy Policy](<https://nnsb.namelessnanashi.dev/PrivacyPolicy/>)
-- [Terms of Service](<https://nnsb.namelessnanashi.dev/TermsOfService/>)
+- [Privacy Policy](<https://nnsb.namelessnanashi.dev/PrivacyPolicy>)
+- [Terms of Service](<https://nnsb.namelessnanashi.dev/TermsOfService>)
 
 ## License & Credits
 
