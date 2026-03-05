@@ -17,6 +17,7 @@ If you're looking for the bot's source code, feature list, and full documentatio
 
 - Docker Engine and Docker Compose plugin
 - Discord Bot token (with Bot scope; recommended intents: Server Members)
+- Discord Application (Client) ID (required for invite URL generation and API usage)
 
 # Quick start
 
@@ -37,7 +38,7 @@ Option A - automated (recommended)
 ./autoConfig.sh
 ```
 
-The wizard prompts for your `DISCORD_TOKEN`, validates it, and generates secure Postgres credentials. It writes `.env` for you. Re-run to overwrite if needed.
+The wizard prompts for your `DISCORD_TOKEN`, `OWNER_ID`, and required `APPLICATION_ID`, validates them, and generates secure Postgres credentials. It writes `.env` for you. Re-run to overwrite if needed.
 
 Option B - manual
 
@@ -45,9 +46,9 @@ Option B - manual
 cp .env.example .env
 # Open .env and set at minimum:
 #   DISCORD_TOKEN=your-discord-bot-token
+#   APPLICATION_ID=your-application-client-id (invite links, slash command registration, API identity)
 # Optional but useful:
 #   OWNER_ID=your-discord-user-id
-#   APPLICATION_ID=your-application-client-id (prints invite URL on startup)
 ```
 
 Notes:
@@ -69,7 +70,7 @@ In the terminal
 docker compose up
 ```
 
-### 4. Invite the bot to your server (replace with your Application ID)
+### 4. Invite the bot to your server (replace with the same required `APPLICATION_ID` value)
 
 ```text
 https://discord.com/oauth2/authorize?client_id=<YOUR_APP_ID>&scope=bot%20applications.commands&permissions=134217728&integration_type=0
