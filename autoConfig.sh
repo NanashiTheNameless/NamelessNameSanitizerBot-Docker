@@ -121,17 +121,17 @@ while :; do
 done
 while :; do
 	OWNER_ID=$(prompt_basic "Your Discord user ID (you will be the bot owner)")
-	if validate_discord_id "OWNER_ID" "$OWNER_ID" "Discord user ID"; then
+	if validate_discord_id "OWNER_ID" "$OWNER_ID" "a Discord user ID"; then
 		break
 	fi
 	echo "Validation failed. Please enter a valid Discord user ID again."
 done
 while :; do
 	APPLICATION_ID=$(prompt_basic "Application ID from Discord Developer Portal (required)")
-	if validate_discord_id "APPLICATION_ID" "$APPLICATION_ID" "Discord application ID"; then
+	if validate_discord_id "APPLICATION_ID" "$APPLICATION_ID" "Discord Application/Client ID"; then
 		break
 	fi
-	echo "Validation failed. Please enter a valid Discord application ID again."
+	echo "Validation failed. Please enter a valid Discord Application ID again."
 done
 
 echo
