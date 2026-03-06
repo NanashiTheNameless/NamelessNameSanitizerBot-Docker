@@ -5,7 +5,7 @@ This repository is a minimal, fast-to-run Docker setup for NamelessNameSanitizer
 If you're looking for the bot's source code, feature list, and full documentation, see:
 
 - Full repo and docs: <https://github.com/NanashiTheNameless/NamelessNameSanitizerBot>
-- Install to a server: <https://nnsb.namelessnanashi.dev/install/>
+- Install to a server: <https://nnsb.namelessnanashi.dev/install>
 
 ## Why this repo exists
 
@@ -117,7 +117,7 @@ docker compose down
 
 ## Security & privacy
 
-See [SECURITY.md](<./SECURITY.md>) in this repo and the policies on the project site:
+See [SECURITY.md](<https://github.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker/blob/main/SECURITY.md>) in this repo and the policies on the project site:
 
 - The bot does not log message content and doesn't require the Message Content intent.
 - Logging channel (if set) only receives a short notice when a nickname is changed.
@@ -135,9 +135,9 @@ Related policies:
 
 ## License & Credits
 
-See [LICENSE.md](<./LICENSE.md>).
+See [LICENSE.md](<https://github.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker/blob/main/LICENSE.md>).
 
-- [All Major Contributors](<./CONTRIBUTORS.md>)
+- [All Major Contributors](<https://github.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker/blob/main/CONTRIBUTORS.md>)
 - [All Other Contributors](<https://github.com/NanashiTheNameless/NamelessNameSanitizerBot-Docker/graphs/contributors>)
 
 ## Note on contributions from AI
