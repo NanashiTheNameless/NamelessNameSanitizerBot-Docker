@@ -127,7 +127,7 @@ while :; do
 	echo "Validation failed. Please enter a valid Discord user ID again."
 done
 while :; do
-	APPLICATION_ID=$(prompt_basic "Application ID from Discord Developer Portal (required for invite links and API usage)")
+	APPLICATION_ID=$(prompt_basic "Application ID from Discord Developer Portal (required)")
 	if validate_discord_id "APPLICATION_ID" "$APPLICATION_ID" "Discord application ID"; then
 		break
 	fi
