@@ -38,7 +38,7 @@ Option A - automated (recommended)
 ./autoConfig.sh
 ```
 
-The wizard prompts for your `DISCORD_TOKEN`, `OWNER_ID`, and required `APPLICATION_ID`, validates them, and generates secure Postgres credentials. It writes `.env` for you. Re-run to overwrite if needed.
+The wizard prompts for your required `DISCORD_TOKEN`, `OWNER_ID`, and `APPLICATION_ID`, validates them, and generates secure Postgres credentials, then it asks for your defaults. It writes `.env` for you. Re-run to overwrite if needed.
 
 Option B - manual
 
@@ -47,7 +47,6 @@ cp .env.example .env
 # Open .env and set at minimum:
 #   DISCORD_TOKEN=your-discord-bot-token
 #   APPLICATION_ID=your-application-client-id (invite links, slash command registration, API identity)
-# Optional but useful:
 #   OWNER_ID=your-discord-user-id
 ```
 
